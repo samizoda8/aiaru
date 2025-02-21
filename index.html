@@ -1951,7 +1951,52 @@
             </div>
         </section>
         <!-- instructor-area-two-end -->
+<style>
+        .instructor__item-wrap-two > .row > div:last-child .instructor__thumb-two img {
+    max-width: 115% !important; /* Делаем изображение больше */
+    height: auto;
+    transform: translateX(-10%) !important; /* Смещаем левее */
+}
 
+/* Убираем обрезку */
+.instructor__item-wrap-two > .row > div:last-child .instructor__thumb-two {
+    overflow: visible !important;
+}
+
+/* Декоративные формы */
+.instructor__item-wrap-two > .row > div:last-child .shape-two {
+    position: absolute;
+    z-index: -1;
+    right: -5%;
+    bottom: 5%;
+}
+
+/* 🔹 Исправляем отображение на 1024px */
+@media (max-width: 1024px) {
+    .instructor__item-wrap-two > .row > div:last-child .instructor__thumb-two img {
+        max-width: 110% !important; /* Делаем немного меньше */
+        transform: translateX(-7%) !important; /* Смещаем левее */
+    }
+}
+
+/* 🔹 Исправляем отображение на 768px */
+@media (max-width: 768px) {
+    .instructor__item-wrap-two > .row > div:last-child {
+        text-align: left; /* Оставляем текст левее */
+    }
+    .instructor__item-wrap-two > .row > div:last-child .instructor__thumb-two img {
+        max-width: 100% !important; /* Делаем на всю ширину */
+        transform: translateX(-3%) !important; /* Чуть смещаем */
+    }
+    .instructor__item-wrap-two > .row > div:last-child .shape-one {
+        left: 0;
+    }
+    .instructor__item-wrap-two > .row > div:last-child .shape-two {
+        right: 0;
+    }
+}
+
+            </style>
     </main>
     <!-- main-area-end -->
 
