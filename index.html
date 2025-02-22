@@ -329,10 +329,12 @@
                 <div class="banner__images-two tg-svg">
                     <!-- big shape (bsk shape 2) -->
                     <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
-                        <img src="assets/img/banner/h2_banner_shape02.svg" alt="shape" class="injectable tg-motion-effects1">
+                        <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1">
                     </div>
                     <!-- h2 banner shape -->
-                    <span class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape01.svg"></span>
+                    <div data-aos="fade-up" data-aos-delay="600">
+                        <span data-aos="fade-up" data-aos-delay="600" class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
+                    </div>
                     <!-- main image -->
                     <img src="assets/img/banner/h2_banner_img.png" alt="img" class="main-img">
                 </div>
@@ -362,14 +364,10 @@
     left: 5%;
 }
 
-/* h2 banner shape - средний слой */
-.banner-area-two .svg-icon {
-    position: absolute;
-    z-index: 2;
-    width: 80%;
-    max-width: 80%;
-    left: 10%;
-    top: 20%;
+
+.banner-area-two .tg-motion-effects1 {
+    position: relative;
+    left: -8%;
 }
 
 /* Фотография - поверх всех слоев */
@@ -381,60 +379,50 @@
     height: auto;
     transform: scale(1.2) translateX(-5%);
 }
+/* h2 banner shape - средний слой */
+.banner-area-two .svg-icon {
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    max-width: 80%;
+    left: 2%; /* Сдвиг на 8% влево */
+    top: 20%;
+}
 
 /* Адаптивность */
 @media (max-width: 1200px) {
-    .banner-area-two .main-img {
-        transform: scale(1.1) translateX(-5%);
-        width: 100%;
+    .banner-area-two .svg-icon {
+        width: 75%;
+        left: 5%;
+        top: 18%;
     }
 }
 
 @media (max-width: 1024px) {
-    .banner-area-two .main-img {
-        transform: scale(1) translateX(0);
-        width: 95%;
-    }
-    .banner-area-two .big-shape {
-        width: 85%;
-        bottom: -10px;
-    }
     .banner-area-two .svg-icon {
         width: 70%;
-        left: 15%;
-        top: 15%;
+        left: -3%;
+        top: 13%;
+    }
+    .banner-area-two .main-img {
+        width: 92%;
+        transform: scale(1) translateX(0);
     }
 }
 
 @media (max-width: 768px) {
-    .banner-area-two .main-img {
-        transform: scale(1);
-        width: 100%;
-    }
-    .banner-area-two .big-shape {
-        width: 80%;
-        bottom: 0;
-    }
     .banner-area-two .svg-icon {
-        width: 60%;
-        left: 20%;
-        top: 10%;
+        width: 65%;
+        left: 10%;
+        top: 12%;
     }
 }
 
 @media (max-width: 480px) {
-    .banner-area-two .main-img {
-        transform: scale(1.1);
-        width: 110%;
-    }
-    .banner-area-two .big-shape {
-        width: 75%;
-        bottom: 5px;
-    }
     .banner-area-two .svg-icon {
-        width: 55%;
-        left: 22%;
-        top: 5%;
+        width: 60%;
+        left: 12%;
+        top: 10%;
     }
 }
 </style>
