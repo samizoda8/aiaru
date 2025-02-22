@@ -341,80 +341,73 @@
 <!-- banner-area-end -->
 
 <style>
-   .banner-area-two .banner__images-two {
-       position: relative;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-   }
-
    /* big shape - самый нижний слой */
-   .banner-area-two .big-shape {
-       position: absolute;
-       z-index: 1;
-       width: 100%;
-       max-width: 90%;
-       bottom: -20px;
-       left: 5%;
-   }
+.banner-area-two .big-shape {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    max-width: 90%;
+    bottom: -20px;
+    left: 5%;
+}
 
-   .banner-area-two .tg-motion-effects1 {
-       position: relative;
-       left: -8%;
-   }
+.banner-area-two .tg-motion-effects1 {
+    position: relative;
+    left: -8%;
+}
 
-   /* Фотография - поверх всех слоев */
-   .banner-area-two .main-img {
-       position: relative;
-       z-index: 3;
-       width: 92%;
-       max-width: none;
-       height: auto;
-       transform: scale(1.2) translateX(-5%);
-   }
+/* Фотография - поверх всех слоев */
+.banner-area-two .main-img {
+    position: relative;
+    z-index: 3;
+    width: 92%;
+    max-width: none;
+    height: auto;
+    transform: scale(1.2) translateX(-5%);
+}
 
-   /* h2 banner shape - над головой девушки */
-   .banner-area-two .svg-icon {
-       position: absolute;
-       z-index: 2;
-       width: 15%;
-       max-width: 15%;
-       left: 40%; /* Подгон под положение головы */
-       top: 10%; /* Немного вверх */
-   }
+/* h2 banner shape - над головой девушки */
+.banner-area-two .svg-icon {
+    position: absolute;
+    z-index: 2;
+    width: 15%;
+    max-width: 15%;
+    left: 42%; /* Подгон под положение головы */
+    top: 5%; /* Немного вверх */
+}
 
-   /* Адаптивность */
-   @media (max-width: 1200px) {
-       .banner-area-two .svg-icon {
-           width: 13%;
-           left: 38%;
-           top: 8%;
-       }
-   }
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .banner-area-two .svg-icon {
+        width: 13%;
+        left: 40%;
+        top: 3%;
+    }
+}
 
-   @media (max-width: 1024px) {
-       .banner-area-two .svg-icon {
-           width: 12%;
-           left: 36%;
-           top: 7%;
-       }
-   }
+@media (max-width: 1024px) {
+    .banner-area-two .svg-icon {
+        width: 12%;
+        left: 38%;
+        top: 2%;
+    }
+}
 
-   @media (max-width: 768px) {
-       .banner-area-two .svg-icon {
-           width: 10%;
-           left: 34%;
-           top: 6%;
-       }
-   }
+@media (max-width: 768px) {
+    .banner-area-two .svg-icon {
+        width: 10%;
+        left: 36%;
+        top: 1%;
+    }
+}
 
-   @media (max-width: 480px) {
-       .banner-area-two .svg-icon {
-           width: 8%;
-           left: 30%;
-           top: 5%;
-       }
-   }
+@media (max-width: 480px) {
+    .banner-area-two .svg-icon {
+        width: 8%;
+        left: 34%;
+        top: 0;
+    }
+}
 </style>
 
 
