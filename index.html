@@ -391,33 +391,32 @@
     height: auto;
     transform: scale(1.2) translateX(-5%);
 }
-/* h2 banner shape - средний слой */
 .banner-area-two .svg-icon {
     position: absolute;
     z-index: 4;
     width: 80%;
-    max-width: 80%;
-    left: -25%; /* Сдвиг на 8% влево */
-    top: -2%;
+    max-width: 100%;
+    left: -10vw; /* Используем относительные единицы */
+    top: 5%;
 }
 
 /* Адаптивность */
 @media (max-width: 1200px) {
     .banner-area-two .svg-icon {
         width: 75%;
-        left: 5%;
-        top: 18%;
+        left: 0;
+        top: 12%;
     }
 }
 
 @media (max-width: 1024px) {
     .banner-area-two .svg-icon {
         width: 70%;
-        left: -3%;
-        top: 13%;
+        left: 0;
+        top: 10%;
     }
     .banner-area-two .main-img {
-        width: 92%;
+        width: 90%;
         transform: scale(1) translateX(0);
     }
 }
@@ -425,18 +424,19 @@
 @media (max-width: 768px) {
     .banner-area-two .svg-icon {
         width: 65%;
-        left: 10%;
-        top: 12%;
+        left: 5%;
+        top: 8%;
     }
 }
 
 @media (max-width: 480px) {
     .banner-area-two .svg-icon {
         width: 60%;
-        left: 12%;
-        top: 10%;
+        left: 8%;
+        top: 5%;
     }
 }
+
 </style>
 
 
