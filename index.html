@@ -303,7 +303,7 @@
     <!-- main-area -->
     <main class="main-area fix">
 
-<!-- banner-area -->
+<!-- banner-area --> 
 <section class="banner-area-two banner-bg-two tg-motion-effects" data-background="assets/img/banner/banner_bg02.png">
     <div class="container">
         <div class="row justify-content-center">
@@ -326,117 +326,95 @@
                 </div>
             </div>
             <div class="col-xl-7 col-lg-6 col-md-8">
-                        <div class="banner__images-two tg-svg">
-                            <img src="assets/img/banner/h2_banner_img.png" alt="img" class="main-img">
-                            <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
-                                <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1">
-                            </div>
-                            <span class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
-                           <!-- <div class="about__enrolled" data-aos="fade-right" data-aos-delay="200">
-                                <p class="title"><span></span></p>
-                                <img src="assets/img/others/student_grp.png" alt="img">
-                            </div>
-                            <div class="banner__student" data-aos="fade-left" data-aos-delay="200">
-                                <div class="icon">
-                                    <img src="assets/img/banner/h2_banner_icon.svg" alt="img" class="injectable">
-                                <style>
-                                    
-                                </style>
-                                </div>
-                                <div class="content">
-                                    <span>Всего студентов</span>
-                                    <h4 class="title">15K</h4>
-                                </div>
-                            </div>
-                            -->
-                        </div>
+                <div class="banner__images-two tg-svg">
+                    <img src="assets/img/banner/h2_banner_img.png" alt="img" class="main-img">
+                    <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
+                        <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1">
                     </div>
+                    <img src="assets/img/banner/h2_banner_shape02.svg" alt="shape" class="svg-icon"> 
+                </div>
+            </div>
         </div>
     </div>
-    <img src="assets/img/banner/h2_banner_shape03.svg" alt="shape" class="line-shape-two" data-aos="fade-right"
-    data-aos-delay="1600">
+    <img src="assets/img/banner/h2_banner_shape03.svg" alt="shape" class="line-shape-two" data-aos="fade-right" data-aos-delay="1600">
 </section>
 <!-- banner-area-end -->
 
 <style>
    .banner-area-two .banner__images-two {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
 
-/* big shape - самый нижний слой */
-.banner-area-two .big-shape {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    max-width: 90%;
-    bottom: -20px;
-    left: 5%;
-}
+   /* big shape - самый нижний слой */
+   .banner-area-two .big-shape {
+       position: absolute;
+       z-index: 1;
+       width: 100%;
+       max-width: 90%;
+       bottom: -20px;
+       left: 5%;
+   }
 
+   .banner-area-two .tg-motion-effects1 {
+       position: relative;
+       left: -8%;
+   }
 
-.banner-area-two .tg-motion-effects1 {
-    position: relative;
-    left: -8%;
-}
+   /* Фотография - поверх всех слоев */
+   .banner-area-two .main-img {
+       position: relative;
+       z-index: 3;
+       width: 92%;
+       max-width: none;
+       height: auto;
+       transform: scale(1.2) translateX(-5%);
+   }
 
-/* Фотография - поверх всех слоев */
-.banner-area-two .main-img {
-    position: relative;
-    z-index: 3;
-    width: 92%;
-    max-width: none;
-    height: auto;
-    transform: scale(1.2) translateX(-5%);
-}
-/* h2 banner shape - средний слой */
-.banner-area-two .svg-icon {
-    position: absolute;
-    z-index: 2;
-    width: 80%;
-    max-width: 80%;
-    left: 2%; /* Сдвиг на 8% влево */
-    top: 20%;
-}
+   /* h2 banner shape - над головой девушки */
+   .banner-area-two .svg-icon {
+       position: absolute;
+       z-index: 2;
+       width: 15%;
+       max-width: 15%;
+       left: 40%; /* Подгон под положение головы */
+       top: 10%; /* Немного вверх */
+   }
 
-/* Адаптивность */
-@media (max-width: 1200px) {
-    .banner-area-two .svg-icon {
-        width: 75%;
-        left: 5%;
-        top: 18%;
-    }
-}
+   /* Адаптивность */
+   @media (max-width: 1200px) {
+       .banner-area-two .svg-icon {
+           width: 13%;
+           left: 38%;
+           top: 8%;
+       }
+   }
 
-@media (max-width: 1024px) {
-    .banner-area-two .svg-icon {
-        width: 70%;
-        left: -3%;
-        top: 13%;
-    }
-    .banner-area-two .main-img {
-        width: 92%;
-        transform: scale(1) translateX(0);
-    }
-}
+   @media (max-width: 1024px) {
+       .banner-area-two .svg-icon {
+           width: 12%;
+           left: 36%;
+           top: 7%;
+       }
+   }
 
-@media (max-width: 768px) {
-    .banner-area-two .svg-icon {
-        width: 65%;
-        left: 10%;
-        top: 12%;
-    }
-}
+   @media (max-width: 768px) {
+       .banner-area-two .svg-icon {
+           width: 10%;
+           left: 34%;
+           top: 6%;
+       }
+   }
 
-@media (max-width: 480px) {
-    .banner-area-two .svg-icon {
-        width: 60%;
-        left: 12%;
-        top: 10%;
-    }
-}
+   @media (max-width: 480px) {
+       .banner-area-two .svg-icon {
+           width: 8%;
+           left: 30%;
+           top: 5%;
+       }
+   }
 </style>
 
 
