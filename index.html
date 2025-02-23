@@ -54,14 +54,14 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <ul class="tg-header__top-info list-wrap">
-                            <li><img src="assets/img/icons/map_marker.svg" width="17px" alt="Icon"><span><small>улица Ш. Шотемур 21, г. Душанбе</small></span></li>
-                            <li><img src="assets/img/icons/envelope.svg" width="20px" alt="Icon"> <a href="mailto:ai.academy@zypl.ai"><small>ai.academy@zypl.ai</small></a></li>
+                            <li><img src="assets/img/icons/map_marker.svg" alt="Icon"> <span><small>улица Ш. Шотемур 21, г. Душанбе</small></span></li>
+                            <li><img src="assets/img/icons/envelope.svg" alt="Icon"> <a href="mailto:ai.academy@zypl.ai"><small>ai.academy@zypl.ai</small></a></li>
                         </ul>
                     </div>
                     <div class="col-lg-6">
                         <div class="tg-header__top-right">
                             <div class="tg-header__phone">
-                                <img src="assets/img/icons/phone.svg" width="18px" alt="Icon"><small>Позвоните нам:</small><a href="tel:992995550032"><small>+992 99 555 00 32</small></a>
+                                <img src="assets/img/icons/phone.svg" alt="Icon"><small>Позвоните нам:</small><a href="tel:992995550032"><small>+992 99 555 00 32</small></a>
                             </div>
                             <ul class="tg-header__top-social list-wrap">
                                 <li><small>Мы в соцсетях:</small></li>
@@ -320,23 +320,35 @@
                        <br> Ваш путь к будущему технологий!
                     </h3>
                     <div class="banner__btn-two" data-aos="fade-right" data-aos-delay="600">
-                        <a style="text-transform: none;" href="#courses" class="btn arrow-btn">Начать сейчас 
-                        <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
+                        <a style="text-transform: none;" href="#courses" class="btn arrow-btn">Начать сейчас <img src="assets/img/icons/right_arrow.svg" alt="img" class="injectable"></a>
+                       <!-- <a href="https://www.youtube.com/watch?v=DQyle-GJE3E" class="play-btn popup-video"><i class="fas fa-play"></i> Посмотреть <br> наше видео</a>-->
                     </div>
                 </div>
             </div>
             <div class="col-xl-7 col-lg-6 col-md-8">
                 <div class="banner__images-two tg-svg">
-                    <!-- big shape (bsk shape 2) -->
+                    <img src="assets/img/banner/h2_banner_img.png" alt="img" class="main-img">
                     <div class="shape big-shape" data-aos="fade-up" data-aos-delay="600">
                         <img src="assets/img/banner/h2_banner_shape01.svg" alt="shape" class="injectable tg-motion-effects1">
                     </div>
-                    <!-- h2 banner shape -->
-                    <div data-aos="fade-up" data-aos-delay="600">
-                        <span data-aos="fade-up" data-aos-delay="600" class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
+                    <span class="svg-icon" id="banner-svg" data-svg-icon="assets/img/banner/h2_banner_shape02.svg"></span>
+                   <!-- <div class="about__enrolled" data-aos="fade-right" data-aos-delay="200">
+                        <p class="title"><span></span></p>
+                        <img src="assets/img/others/student_grp.png" alt="img">
                     </div>
-                    <!-- main image -->
-                    <img src="assets/img/banner/h2_banner_img.png" alt="img" class="main-img">
+                    <div class="banner__student" data-aos="fade-left" data-aos-delay="200">
+                        <div class="icon">
+                            <img src="assets/img/banner/h2_banner_icon.svg" alt="img" class="injectable">
+                        <style>
+                            
+                        </style>
+                        </div>
+                        <div class="content">
+                            <span>Всего студентов</span>
+                            <h4 class="title">15K</h4>
+                        </div>
+                    </div>
+                    -->
                 </div>
             </div>
         </div>
@@ -346,86 +358,6 @@
 </section>
 <!-- banner-area-end -->
 
-<style>
-   .banner-area-two .banner__images-two {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* big shape - самый нижний слой */
-.banner-area-two .big-shape {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    max-width: 90%;
-    bottom: -20px;
-    left: 5%;
-}
-
-
-.banner-area-two .tg-motion-effects1 {
-    position: relative;
-    left: -8%;
-}
-
-/* Фотография - поверх всех слоев */
-.banner-area-two .main-img {
-    position: relative;
-    z-index: 3;
-    width: 92%;
-    max-width: none;
-    height: auto;
-    transform: scale(1.2) translateX(-5%);
-}
-/* h2 banner shape - средний слой */
-.banner-area-two .svg-icon {
-    position: absolute;
-    z-index: 2;
-    width: 80%;
-    max-width: 80%;
-    left: 2%; /* Сдвиг на 8% влево */
-    top: 20%;
-}
-
-/* Адаптивность */
-@media (max-width: 1200px) {
-    .banner-area-two .svg-icon {
-        width: 75%;
-        left: 5%;
-        top: 18%;
-    }
-}
-
-@media (max-width: 1024px) {
-    .banner-area-two .svg-icon {
-        width: 70%;
-        left: -3%;
-        top: 13%;
-    }
-    .banner-area-two .main-img {
-        width: 92%;
-        transform: scale(1) translateX(0);
-    }
-}
-
-@media (max-width: 768px) {
-    .banner-area-two .svg-icon {
-        width: 65%;
-        left: 10%;
-        top: 12%;
-    }
-}
-
-@media (max-width: 480px) {
-    .banner-area-two .svg-icon {
-        width: 60%;
-        left: 12%;
-        top: 10%;
-    }
-}
-</style>
 
 
         <div class="brand-area brand-area-two">
