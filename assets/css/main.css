@@ -4267,32 +4267,53 @@ textarea {
 .banner__images-two .big-shape {
   position: absolute;
   z-index: -1;
-  left: 16%;
-  top: -10%;
+  left: 17%;
+  top: 18%;
   color: #FFC738;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
   .banner__images-two .big-shape {
-    top: 5%;
+    width: 350px;
+    top: 30%;
+    margin-left: -8%;
   }
 }
-@media (max-width: 1199.98px) {
+
+@media (max-width: 992px) {
   .banner__images-two .big-shape {
     left: 0;
-    width: 400px;
-    top: 2%;
-  }
-  .banner__images-two .big-shape svg {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    top: 5%;
+    margin-left: 0;
+
   }
 }
-@media (max-width: 767.98px) {
+
+@media (max-width: 768px) {
   .banner__images-two .big-shape {
-    width: 100%;
-    max-width: 400px;
+    width: 250px;
+    top: 10%;
+    margin-left: 20%;
+
   }
 }
+@media (max-width: 425px) {
+  .banner__images-two .big-shape {
+    width: 250px;
+    top: 10%;
+    margin-left: 10%;
+
+  }
+}
+@media (max-width: 375px) {
+  .banner__images-two .big-shape {
+    width: 250px;
+    top: 10%;
+    margin-left: 6%;
+
+  }
+}
+
 .banner__images-two img.main-img {
   width: 100%;
   height: auto;
@@ -4301,7 +4322,7 @@ textarea {
   margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .banner__images-two img.main-img {
     width: 100%;
     height: auto;
@@ -4310,6 +4331,25 @@ textarea {
     margin: 0 auto;
   }
 }
+
+@media (max-width: 1200px) {
+  .banner__images-two {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .banner__images-two img.main-img {
+    width: 110%;
+    height: auto;
+    max-width: 600px; /* Настрой в зависимости от дизайна */
+    margin-top: 20%; /* Чтобы добавить отступ */
+    margin-left: -5%;
+  }
+}
+
 
 @media (max-width: 992px) {
   .banner__images-two img.main-img {
