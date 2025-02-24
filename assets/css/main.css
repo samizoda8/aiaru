@@ -4267,8 +4267,8 @@ textarea {
 .banner__images-two .big-shape {
   position: absolute;
   z-index: -1;
-  left: 8%;
-  top: 2%;
+  left: 16%;
+  top: -10%;
   color: #FFC738;
 }
 @media (max-width: 1500px) {
@@ -4293,6 +4293,55 @@ textarea {
     max-width: 400px;
   }
 }
+.banner__images-two img.main-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Настрой размер в зависимости от дизайна */
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .banner__images-two img.main-img {
+    width: 100%;
+    height: auto;
+    max-width: 850px; /* Настрой размер в зависимости от дизайна */
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner__images-two img.main-img {
+    width: 100%;
+    height: auto;
+    max-width: 650px; /* Настрой размер в зависимости от дизайна */
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__images-two img.main-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Настрой размер в зависимости от дизайна */
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner__images-two img.main-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Настрой размер в зависимости от дизайна */
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
 .banner__images-two .svg-icon {
   width: 42px;
   height: 42px;
