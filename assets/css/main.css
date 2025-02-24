@@ -4301,7 +4301,7 @@ textarea {
   .banner__images-two .big-shape {
     width: 250px;
     top: 10%;
-    margin-left: 10%;
+    margin-left: -15%;
 
   }
 }
@@ -4309,7 +4309,7 @@ textarea {
   .banner__images-two .big-shape {
     width: 250px;
     top: 10%;
-    margin-left: -10%;
+    margin-left: -12%;
 
   }
 }
