@@ -391,50 +391,45 @@
     height: auto;
     transform: scale(1.2) translateX(-5%);
 }
-/* h2 banner shape - средний слой */
 .banner-area-two .svg-icon {
     position: absolute;
-    z-index: 4;
-    width: 80%;
-    max-width: 80%;
-    left: 2%; /* Сдвиг на 8% влево */
-    top: 20%;
+    z-index: 5; /* Выше главного изображения */
+    width: 20%; /* Оптимальный размер */
+    max-width: 150px;
+    left: 33%; /* Положение по горизонтали */
+    top: 5%; /* Расположение над головой */
 }
 
 /* Адаптивность */
 @media (max-width: 1200px) {
     .banner-area-two .svg-icon {
-        width: 75%;
-        left: 5%;
-        top: 18%;
+        width: 18%;
+        left: 35%;
+        top: 3%;
     }
 }
 
 @media (max-width: 1024px) {
     .banner-area-two .svg-icon {
-        width: 70%;
-        left: -3%;
-        top: 13%;
-    }
-    .banner-area-two .main-img {
-        width: 92%;
-        transform: scale(1) translateX(0);
+        width: 16%;
+        left: 38%;
+        top: 2%;
     }
 }
 
 @media (max-width: 768px) {
     .banner-area-two .svg-icon {
-        width: 65%;
-        left: 10%;
-        top: 12%;
+        width: 14%;
+        left: 40%;
+        top: 1%;
     }
 }
 
 @media (max-width: 480px) {
     .banner-area-two .svg-icon {
-        width: 60%;
-        left: 12%;
-        top: 10%;
+        width: 12%;
+        left: 42%;
+        top: 0;
     }
 }
 </style>
