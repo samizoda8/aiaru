@@ -1699,7 +1699,41 @@ top: -5%;
             </div>
         </section>
         <!-- instructor-area-end -->
+<style>
+    document.addEventListener("DOMContentLoaded", function () {
+    var instructorSlider = new Swiper(".instructor-active", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: ".instructor-button-next",
+            prevEl: ".instructor-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
+        }
+    });
 
+    var instructorNav = new Swiper(".instructor-nav", {
+        slidesPerView: 6,
+        spaceBetween: 10,
+        watchSlidesProgress: true,
+    });
+
+    instructorSlider.controller.control = instructorNav;
+    instructorNav.controller.control = instructorSlider;
+});
+
+</style>
         <!-- newsletter-area -->
 <section class="newsletter__area">
     <div class="container">
